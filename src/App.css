@@ -8,13 +8,12 @@
 html, body {
   height: 100%;
   font-family: 'Inter', 'Arial', sans-serif;
-<<<<<<< HEAD
+
   background-color: #F7F9FC !important; /* Light blue-gray */
   color: #FFFFFF; /* White text */
-=======
+
   background-color: #F7F9FC !important; 
   color: #FFFFFF; 
->>>>>>> 920107c077568b52808403b4997dbd5699b1a9fb
   overflow: auto;
 }
 
@@ -142,7 +141,7 @@ html, body {
 .forgot-password {
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.8); /* Muted white */
+  color: rgba(255, 255, 255, 0.8); 
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.3s ease;
