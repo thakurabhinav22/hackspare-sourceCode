@@ -435,12 +435,12 @@ return (
       >
         Keyword Searcher
       </button>
-      <button
+      {/* <button
         className={activeTab === "yt-video-courses" ? "tab-active" : "tab-btn"}
         onClick={() => setActiveTab("yt-video-courses")}
       >
         YT Video Courses
-      </button>
+      </button>  */}
     </div>
 
     <div className="crawler-content">

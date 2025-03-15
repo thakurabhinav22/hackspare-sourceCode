@@ -77,18 +77,18 @@ function AdminSidebar() {
           ></box-icon>
           <span>Create Course</span>
         </Link>
-        <Link to="/Admin/Code" className="nav-item">
+        {/* <Link to="/Admin/Code" className="nav-item">
         <box-icon name='terminal' type='solid' color="#4169E1" className="nav-icon" ></box-icon>
           <span>Coding Question</span>
-        </Link>
-        <Link to="/Admin/ManageRepo" className="nav-item">
+        </Link> */}
+        {/* <Link to="/Admin/ManageRepo" className="nav-item">
           <box-icon type="solid" name="data" color="#4169E1" className="nav-icon"></box-icon>
           <span>Manage Course DB</span>
-        </Link>
-        <Link to="/Admin/addteam" className="nav-item">
+        </Link> */}
+        {/* <Link to="/Admin/addteam" className="nav-item">
           <box-icon type="solid" name="message-square-add" color="#4169E1" className="nav-icon"></box-icon>
           <span>Add Team</span>
-        </Link>
+        </Link> */}
       </nav>
 
       <div className="logout" onClick={handleLogout}>

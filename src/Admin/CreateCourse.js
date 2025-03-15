@@ -305,9 +305,9 @@ export default function CreateCourse({ AdminName, Role }) {
           </label>
 
           <Link to="/Admin/magicWritter">
-            <button className="create-course-button">
+            {/* <button className="create-course-button">
               <FaEdit /> Magic Writer
-            </button>
+            </button> */}
           </Link>
           <Link to="/Admin/webcrawler">
             <button className="create-course-button">

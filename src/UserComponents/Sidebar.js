@@ -386,19 +386,20 @@ function Sidebar({ isQuestionAnswered, isQuestionGenerated }) {
         <Link to="/Dashboard" className="stud-nav-item" onClick={handleSidebarLinkClick}>
           <FaHome className="stud-nav-icon" />
           <span>Dashboard</span>
-        </Link>
+          </Link>
+        {/*
         <Link to="/analytics" className="stud-nav-item" onClick={handleSidebarLinkClick}>
           <FaCertificate className="stud-nav-icon" />
           <span>Analytics</span>
-        </Link>
+        </Link> */}
         <Link to="/Courses" className="stud-nav-item" onClick={handleSidebarLinkClick}>
           <FaQuestionCircle className="stud-nav-icon" />
           <span>Courses</span>
         </Link>
-        <div className="stud-nav-item" onClick={() => setIsSettingsOpen(true)}>
+        {/* <div className="stud-nav-item" onClick={() => setIsSettingsOpen(true)}>
           <FaCog className="stud-nav-icon" />
           <span>Settings</span>
-        </div>
+        </div> */}
       </nav>
       <div className="logout-btn" onClick={handleLogout}>
         <p>Logout</p>
