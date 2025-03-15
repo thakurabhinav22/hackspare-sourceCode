@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   font-family: 'Inter', 'Arial', sans-serif;
-  background-color: #F7F9FC !important !important; /* Light blue-gray */
+  background-color: #F7F9FC !important; /* Light blue-gray */
   color: #FFFFFF; /* White text */
   overflow: auto;
 }
