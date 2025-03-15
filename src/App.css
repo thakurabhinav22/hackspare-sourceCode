@@ -8,13 +8,10 @@
 html, body {
   height: 100%;
   font-family: 'Inter', 'Arial', sans-serif;
-<<<<<<< HEAD
+
   background-color: #F7F9FC !important; /* Light blue-gray */
-  color: #FFFFFF; /* White text */
-=======
-  background-color: #F7F9FC !important; 
-  color: #FFFFFF; 
->>>>>>> 920107c077568b52808403b4997dbd5699b1a9fb
+  color: #000000; /* Black text */
+
   overflow: auto;
 }
 
@@ -62,7 +59,7 @@ html, body {
   transform: translateY(-4px);
 }
 
-/* Logo and Header - White Text */
+/* Logo and Header - Black Text */
 .logo-container {
   margin-bottom: 2rem;
 }
@@ -75,12 +72,12 @@ html, body {
 .logo-container h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #FFFFFF;
+  color: #000000; /* Changed from white to black */
 }
 
 .subtitle {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8); 
+  color: rgba(0, 0, 0, 0.8); /* Muted black instead of white */
   margin-top: 0.3rem;
 }
 
@@ -97,21 +94,21 @@ html, body {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
   font-size: 1rem;
-  color: #FFFFFF; /* White text */
+  color: #000000; /* Black text */
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .input-field::placeholder {
-  color: rgba(255, 255, 255, 0.6); /* Muted white placeholder */
+  color: rgba(0, 0, 0, 0.6); /* Muted black placeholder instead of white */
 }
 
 .input-field:focus {
   outline: none;
-  border-color: #FFFFFF !important; /* White on focus - Forced */
-  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3); /* White glow */
+  border-color: #000000 !important; /* Black on focus */
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); /* Black glow */
 }
 
-/* Options Section - White Text, Blue Tick */
+/* Options Section - Black Text */
 .options-container {
   display: flex;
   justify-content: space-between;
@@ -123,67 +120,34 @@ html, body {
   display: flex;
   align-items: center;
   font-size: 0.9rem;
-  color: #FFFFFF; /* White */
-}
-
-.checkbox-container input {
-  margin-right: 0.5rem;
-  accent-color: #4169E1 !important; /* Light blue tick - Forced */
-  width: 16px; /* Slightly larger for visibility */
-  height: 16px;
-}
-
-/* Ensure the checked state shows blue */
-.checkbox-container input:checked {
-  background-color: #4169E1 !important; /* Light blue background when checked */
-  border-color: #4169E1 !important;
+  color: #000000; /* Changed from white to black */
 }
 
 .forgot-password {
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.8); /* Muted white */
+  color: rgba(0, 0, 0, 0.8); /* Muted black instead of white */
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 .forgot-password:hover {
-  color: #FFFFFF; /* Full white */
+  color: #000000; /* Full black */
 }
 
-/* Login Button - White with Light Blue Hover */
-.login-button {
-  width: 100%;
-  padding: 0.9rem;
-  background: #FFFFFF !important; /* White button */
-  border: none;
-  border-radius: 8px;
-  color: #4169E1 !important; /* Light blue text */
-  font-size: 1.1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.login-button:hover {
-  background: #4169E1 !important;
-  color: #FFFFFF !important;
-  transform: translateY(-2px);
-}
-
-/* Signup Section - White Text */
+/* Signup Section - Black Text */
 .signup-container {
   margin-top: 1.5rem;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8); /* Muted black instead of white */
 }
 
 .create-account-link {
-  color: #FFFFFF;
+  color: #000000; /* Changed from white to black */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
