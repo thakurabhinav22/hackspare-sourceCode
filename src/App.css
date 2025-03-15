@@ -8,8 +8,8 @@
 html, body {
   height: 100%;
   font-family: 'Inter', 'Arial', sans-serif;
-  background-color: #F7F9FC !important !important; /* Light blue-gray */
-  color: #FFFFFF; /* White text */
+  background-color: #F7F9FC !important; 
+  color: #FFFFFF; 
   overflow: auto;
 }
 
@@ -19,16 +19,16 @@ html, body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #E5E7EB; /* Light gray */
+  background: #E5E7EB; 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4169E1 !important; /* Light blue */
+  background: #4169E1 !important; 
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6B7280 !important; /* Darker gray for contrast */
+  background: #6B7280 !important; 
 }
 
 /* Login Page Styles - Light Theme */
@@ -43,7 +43,7 @@ html, body {
 
 /* Login Container - Light Blue Tint */
 .login-container {
-  background: rgba(65, 105, 225, 0.85); /* Light blue with transparency */
+  background: rgba(65, 105, 225, 0.85); 
   border-radius: 16px;
   padding: 2.5rem;
   width: 100%;
@@ -70,12 +70,12 @@ html, body {
 .logo-container h2 {
   font-size: 1.8rem;
   font-weight: 600;
-  color: #FFFFFF; /* White */
+  color: #FFFFFF;
 }
 
 .subtitle {
   font-size: 0.95rem;
-  color: rgba(255, 255, 255, 0.8); /* Muted white */
+  color: rgba(255, 255, 255, 0.8); 
   margin-top: 0.3rem;
 }
 
@@ -162,8 +162,8 @@ html, body {
 }
 
 .login-button:hover {
-  background: #4169E1 !important; /* Light blue */
-  color: #FFFFFF !important; /* White text on hover */
+  background: #4169E1 !important;
+  color: #FFFFFF !important;
   transform: translateY(-2px);
 }
 
@@ -174,18 +174,18 @@ html, body {
   justify-content: center;
   gap: 0.5rem;
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.8); /* Muted white */
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .create-account-link {
-  color: #FFFFFF; /* White */
+  color: #FFFFFF;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 .create-account-link:hover {
-  color: #4169E1; /* Light blue */
+  color: #4169E1; 
 }
 
 /* Animation - Subtle Entry */
