@@ -8,8 +8,13 @@
 html, body {
   height: 100%;
   font-family: 'Inter', 'Arial', sans-serif;
+<<<<<<< HEAD
+  background-color: #F7F9FC !important; /* Light blue-gray */
+  color: #FFFFFF; /* White text */
+=======
   background-color: #F7F9FC !important; 
   color: #FFFFFF; 
+>>>>>>> 920107c077568b52808403b4997dbd5699b1a9fb
   overflow: auto;
 }
 

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ref, get } from "firebase/database";
 import Cookies from "js-cookie";
 import { database } from "../Admin/firebase";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate } from "react-router-dom"; 
 import Sidebar from "../UserComponents/Sidebar";
 import "./Dashboard.css";
 import Swal from "sweetalert2";
@@ -13,9 +13,9 @@ function Dashboard() {
   const [Surname, setSurName] = useState("");
   const [userBranch, setBranch] = useState("");
   
-  const navigate = useNavigate(); // Initialize the navigate function
+  const navigate = useNavigate(); 
 
-  // Function to show alert messages
+ 
   const showAlertMessage = (message, type) => {
     Swal.fire({
       title: message,
@@ -32,10 +32,10 @@ function Dashboard() {
     document.title = "TheLearnMax - Dashboard";
     const userId = Cookies.get("userSessionCred");
     if (!userId) {
-      // If there's no userId in the cookie, redirect to the login page
+    
       showAlertMessage("No user session found. Please log in again.", "warning");
-      navigate("/"); // Navigate to login page
-      return; // Exit useEffect early
+      navigate("/"); 
+      return; 
     }
 
     // Reference to the user's data in Firebase

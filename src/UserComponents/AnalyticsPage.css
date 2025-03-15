@@ -1,24 +1,13 @@
-
-
-
-
-
-
-
-
-
-/* General Layout */
 .analytics-page-container {
     display: flex;
     min-height: 100vh;
     background: linear-gradient(135deg, #eef2f6 0%, #ffffff 100%);
     font-family: 'Roboto', Arial, sans-serif;
   }
-  
-  /* Main Content */
+
   .analytics-main-content {
     flex: 1;
-    margin-left: 250px; /* Adjust based on your Sidebar width */
+    margin-left: 250px;
     padding: 40px;
   }
   
