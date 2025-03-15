@@ -8,7 +8,7 @@
 html, body {
   height: 100%;
   font-family: 'Inter', 'Arial', sans-serif;
-  background-color: #F7F9FC; /* Light blue-gray */
+  background-color: #F7F9FC !important !important; /* Light blue-gray */
   color: #FFFFFF; /* White text */
   overflow: auto;
 }
@@ -23,12 +23,12 @@ html, body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #4169E1; /* Light blue */
+  background: #4169E1 !important; /* Light blue */
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6B7280; /* Darker gray for contrast */
+  background: #6B7280 !important; /* Darker gray for contrast */
 }
 
 /* Login Page Styles - Light Theme */
