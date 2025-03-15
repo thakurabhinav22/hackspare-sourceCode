@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import "./AnalyticsPage.css";
 import Sidebar from "./Sidebar";
 
-// Register Chart.js components
+
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend, ArcElement);
 
 function AnalyticsPage() {
