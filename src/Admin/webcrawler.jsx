@@ -31,7 +31,9 @@ export default function WebCrawler() {
   // alert(apiKey)
 
   const server_end_point =  process.env.REACT_APP_SCRAPE_SERVER_ENDPOINT;;
+  console.log(server_end_point)
   const download_endpoint = process.env.REACT_APP_DOWNLOAD_SERVER_ENDPOINT;
+  console.log(download_endpoint)
   const youtube_search_endpoint = "https://d7150945-fc09-42e1-800c-b55c84548d79-00-1r5xa442n98oj.sisko.replit.dev/search_videos";
 
   const cseRef = useRef(null);
@@ -146,7 +148,7 @@ export default function WebCrawler() {
     try {
       setLoading(true);
       setError(null);
-      const response = await fetch(process.env.REACT_APP_SCRAPE_SERVER_ENDPOINT, {
+      const response = await fetch("https://tlm-server.onrender.com/search", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ topic: keyword, author: "", keywords: "" }),
@@ -440,7 +442,7 @@ return (
         onClick={() => setActiveTab("yt-video-courses")}
       >
         YT Video Courses
-      </button>  */}
+      </button> */}
     </div>
 
     <div className="crawler-content">
