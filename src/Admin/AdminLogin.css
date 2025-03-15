@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Admin-login-component-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #F7F9FC; /* Light blue-gray background */
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  width: 400px;
+  padding: 2rem;
+  background-color: rgba(65, 105, 225, 0.85); /* Light blue tint for contrast */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: #FFFFFF; /* White text */
+}
+
+.logo-container {
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #FFFFFF; /* White */
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 2px solid #4169E1 !important; /* Light blue border */
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  color: #FFFFFF; /* White */
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  outline: none;
+  border: 2px solid #FFFFFF !important; /* White on focus */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3); /* White glow */
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Muted white placeholder */
+}
+
+.login-button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  background-color: #FFFFFF; /* White button */
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4169E1; /* Light blue text */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.login-button:hover {
+  background-color: #4169E1; /* Light blue on hover */
+  color: #FFFFFF; /* White text on hover */
+}
+
+/* Checkbox styling (if needed) */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #FFFFFF; /* White */
+}
+
+.checkbox-container input {
+  margin-right: 0.5rem;
+  accent-color: #4169E1 !important; /* Light blue tick */
+  width: 16px;
+  height: 16px;
+}
+
+.checkbox-container input:checked {
+  background-color: #4169E1 !important; /* Light blue when checked */
+  border-color: #4169E1 !important;
+}
+
+/* Footer styling */
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 43%;
+  cursor: pointer;
+}
+
+.footer p {
+  color: #FFFFFF; /* White */
+}
+
+/* Alert Styling */
+.alert {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4169E1; /* Light blue */
+  color: #FFFFFF; /* White text */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fadeOut 5s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    bottom: -50px;
+  }
+}

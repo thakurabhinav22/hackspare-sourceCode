@@ -1,0 +1,110 @@
+.module-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #F9FAFB; /* Very light gray background */
+  color: #1F2937; /* Dark gray text for contrast */
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Header Section */
+.header-container {
+  width: calc(100% - 280px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #FFFFFF; /* Pure white background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin-left: 280px;
+}
+
+.header-container h1 {
+  font-size: 24px;
+  margin: 0;
+  color: #44c4ff; /* Vibrant light blue for title */
+}
+
+.filter-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-input {
+  padding: 8px 12px;
+  border: 1px solid #D1D5DB; /* Light gray border */
+  border-radius: 4px;
+  background-color: #FFFFFF; /* White background */
+  color: #1F2937;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #9CA3AF; /* Neutral gray placeholder */
+}
+
+.filter-select {
+  padding: 8px;
+  border: 1px solid #D1D5DB; /* Light gray border */
+  border-radius: 4px;
+  background-color: #FFFFFF; /* White background */
+  color: #1F2937;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Courses List */
+.courses-container {
+  width: calc(100% - 280px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  overflow-y: auto;
+  margin-left: 280px;
+}
+
+.course-card {
+  background-color: #FFFFFF; /* White background */
+  height: 250px;
+  border-radius: 10px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.course-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #44c4ff; /* Light blue for course titles */
+}
+
+.course-author {
+  font-size: 14px;
+  color: #6B7280; /* Medium gray */
+}
+
+.no-results {
+  font-size: 18px;
+  color: #6B7280; /* Medium gray */
+  text-align: center;
+  width: 100%;
+}

@@ -1,0 +1,169 @@
+/* Wrapper for the course form */
+.publicCourse-wrapper {
+  background-color: #f5f5f5; /* Light background */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  height: 100vh; /* Full screen height */
+  align-items: center;
+}
+
+/* Main form container */
+.form-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333; /* Dark text for the title */
+}
+
+.accountment {
+  color: #333333; /* Dark text */
+}
+
+/* Input groups */
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+  color: #555555; /* Medium-dark text for labels */
+}
+
+.input-group input,
+.textarea-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc; /* Light border */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for input fields */
+  color: #333333; /* Dark text */
+}
+
+.textarea-group textarea {
+  resize: vertical;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group input {
+  margin-right: 10px;
+}
+
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.radio-group label {
+  margin-right: 20px;
+  color: #555555; /* Medium-dark text */
+}
+
+.textarea-group textarea {
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Publish Button and Revert Button */
+.publish-button,
+.revert-button {
+  padding: 12px 25px;
+  background-color: #4caf50; /* Green for Publish Button */
+  color: #ffffff; /* White text */
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  flex: 1;
+  font-size: 16px;
+}
+
+.revert-button {
+  background-color: #f44336; /* Red for Revert Button */
+}
+
+.publish-button:disabled {
+  background-color: #cccccc; /* Gray for disabled state */
+  cursor: not-allowed;
+}
+
+.revert-button:hover,
+.publish-button:hover {
+  opacity: 0.9;
+}
+
+/* Input field focus effects */
+.input-group input:focus,
+.textarea-group textarea:focus {
+  outline: none;
+  border-color: #4caf50; /* Green border for focus */
+}
+
+.checkbox-group input:focus {
+  outline: none;
+}
+
+.pdf-content-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: #f9f9f9; /* Light background */
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 700px; /* Limiting the height of the text area */
+  overflow-y: auto; /* Scrollable text */
+  color: #333333; /* Dark text */
+}
+
+.pdf-content-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pdf-content-box {
+  background-color: #ffffff; /* White background */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  color: #333333; /* Dark text */
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  color: #f44336; /* Red for close button */
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+}

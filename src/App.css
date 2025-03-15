@@ -1,0 +1,205 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', 'Arial', sans-serif;
+  background-color: #F7F9FC; /* Light blue-gray */
+  color: #FFFFFF; /* White text */
+  overflow: auto;
+}
+
+/* Scrollbar Styling - Light Blue */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E5E7EB; /* Light gray */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4169E1; /* Light blue */
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B7280; /* Darker gray for contrast */
+}
+
+/* Login Page Styles - Light Theme */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #F7F9FC 0%, #E5E7EB 100%); /* Light gradient */
+  padding: 20px;
+}
+
+/* Login Container - Light Blue Tint */
+.login-container {
+  background: rgba(65, 105, 225, 0.85); /* Light blue with transparency */
+  border-radius: 16px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 6px 20px rgba(65, 105, 225, 0.2); /* Light blue shadow */
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+  transform: translateY(-4px);
+}
+
+/* Logo and Header - White Text */
+.logo-container {
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 130px;
+  margin-bottom: 1rem;
+}
+
+.logo-container h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #FFFFFF; /* White */
+}
+
+.subtitle {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.8); /* Muted white */
+  margin-top: 0.3rem;
+}
+
+/* Form Inputs - Blue Border */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  margin: 0.5rem 0;
+  border: 2px solid #4169E1 !important; /* Light blue border - Forced */
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+  font-size: 1rem;
+  color: #FFFFFF; /* White text */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* Muted white placeholder */
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #FFFFFF !important; /* White on focus - Forced */
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.3); /* White glow */
+}
+
+/* Options Section - White Text, Blue Tick */
+.options-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #FFFFFF; /* White */
+}
+
+.checkbox-container input {
+  margin-right: 0.5rem;
+  accent-color: #4169E1 !important; /* Light blue tick - Forced */
+  width: 16px; /* Slightly larger for visibility */
+  height: 16px;
+}
+
+/* Ensure the checked state shows blue */
+.checkbox-container input:checked {
+  background-color: #4169E1 !important; /* Light blue background when checked */
+  border-color: #4169E1 !important;
+}
+
+.forgot-password {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8); /* Muted white */
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.forgot-password:hover {
+  color: #FFFFFF; /* Full white */
+}
+
+/* Login Button - White with Light Blue Hover */
+.login-button {
+  width: 100%;
+  padding: 0.9rem;
+  background: #FFFFFF !important; /* White button */
+  border: none;
+  border-radius: 8px;
+  color: #4169E1 !important; /* Light blue text */
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.login-button:hover {
+  background: #4169E1 !important; /* Light blue */
+  color: #FFFFFF !important; /* White text on hover */
+  transform: translateY(-2px);
+}
+
+/* Signup Section - White Text */
+.signup-container {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8); /* Muted white */
+}
+
+.create-account-link {
+  color: #FFFFFF; /* White */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.create-account-link:hover {
+  color: #4169E1; /* Light blue */
+}
+
+/* Animation - Subtle Entry */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fadeUp 0.7s ease-out forwards;
+}
